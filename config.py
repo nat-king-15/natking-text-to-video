@@ -3,13 +3,13 @@ import os
 ##Code Written By @ItsMeMaster
 
 class Config(object):
-    BOT_TOKEN = ""
-    DB_NAME = "takkishor9784"
-    API_ID = "21157244"
-    API_HASH = "4981c2699bd91c7db836ec8f77e5b0f0"
-    ADMIN_ID = [1783306092]
-    DB_URL = "mongodb+srv://takkishor9784:gG73juoh44MnvJEZ@cluster0.q8hxdk2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-    LOG_CHANNEL = -1002758652479 # Your Log Channel ID (Bot ko ADMIN BNAYE)
-    USERLINK = "https://t.me/bosch12345o"
-    TUTORIAL_VIDEO = "https://t.me/bosch12345o"
+    BOT_TOKEN = "8525803667:AAEjpylk_qaZ62O_gIZmch46S8VQNYxcY1M"
+    DB_NAME = "nattu"
+    API_ID = "6886135"
+    API_HASH = "ee20a1c8a8e44eaa638b7254cbcc3012"
+    ADMIN_ID = [2118600611]
+    DB_URL = "mongodb+srv://nattu:nattu@cluster0.quvds.mongodb.net/?appName=Cluster0"
+    LOG_CHANNEL = -1003744110162 # Your Log Channel ID (Bot ko ADMIN BNAYE)
+    USERLINK = ""
+    TUTORIAL_VIDEO = ""
 
