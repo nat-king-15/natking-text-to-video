@@ -10,9 +10,6 @@ RUN apt-get update && \
     ffmpeg \
     aria2 \
     && rm -rf /var/lib/apt/lists/*
-RUN wget https://www.masterapi.tech/get/linux/pkg/download/appxdl
-RUN mv appxdl /usr/local/bin/appxdl
-RUN chmod +x /usr/local/bin/appxdl
 RUN python3 -m venv /venv && \
     /venv/bin/pip install -r master.txt
 ENV PATH="/usr/local/bin:/venv/bin:$PATH"
