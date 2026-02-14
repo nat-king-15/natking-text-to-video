@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
     "name": "Auto Uploader 『MASTER』BOT",
     "description": "Download audios from various websites using this Telegram bot.",
@@ -11,7 +10,7 @@
     "formation": {
         "worker": {
             "quantity": 1,
-            "size": "standard-2x"
+            "size": "eco"
         }
     },
     "env": {
@@ -22,42 +21,45 @@
         },
         "DB_NAME": {
             "description": "Your database name",
-            "value": "",
-            "required": true
-        }
-    },
-    "addons": [],
-    "buildpacks": []
-}
-=======
-{
-    "name": "Auto Uploader 『MASTER』BOT",
-    "description": "Download audios from various websites using this Telegram bot.",
-    "logo": "",
-    "keywords": [
-        "pyrogram",
-        "docker"
-    ],
-    "stack": "container",
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "standard-2x"
-        }
-    },
-    "env": {
-        "BOT_TOKEN": {
-            "description": "Your bot's token",
+            "value": "nattu",
+            "required": false
+        },
+        "API_ID": {
+            "description": "Your Telegram API ID",
             "value": "",
             "required": true
         },
-        "DB_NAME": {
-            "description": "Your database name",
+        "API_HASH": {
+            "description": "Your Telegram API Hash",
             "value": "",
             "required": true
+        },
+        "ADMIN_ID": {
+             "description": "Admin User ID (space separated if multiple)",
+             "value": "",
+             "required": false
+        },
+        "DB_URL": {
+            "description": "MongoDB Connection String",
+            "value": "",
+            "required": true
+        },
+        "LOG_CHANNEL": {
+            "description": "Log Channel ID",
+            "value": "",
+            "required": false
+        },
+        "USERLINK": {
+            "description": "User Link",
+            "value": "",
+            "required": false
+        },
+        "TUTORIAL_VIDEO": {
+            "description": "Tutorial Video Link",
+            "value": "",
+            "required": false
         }
     },
     "addons": [],
     "buildpacks": []
 }
->>>>>>> 595a6caeb08f901ec90a4bfed6e34f32cb15f88e
