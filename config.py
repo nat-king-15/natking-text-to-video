@@ -22,5 +22,7 @@ class Config(object):
     except ValueError:
         LOG_CHANNEL = -1003744110162
 
-    USERLINK = os.environ.get("USERLINK", "")
+    logging.basicConfig(level=logging.INFO)
+    
+    USERLINK = os.environ.get("USERLINK", "https://t.me/ItsMeMaster")
     TUTORIAL_VIDEO = os.environ.get("TUTORIAL_VIDEO", "")

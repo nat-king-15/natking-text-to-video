@@ -17,6 +17,22 @@ if __name__ == "__main__":
         workers=1000,
     )
     
+    # Monkeypatch send_message to handle list of chat_ids (fix for scheduler.so error)
+    original_send_message = Client.send_message
+
+    async def patched_send_message(self, chat_id, text, *args, **kwargs):
+        if isinstance(chat_id, list):
+            last_msg = None
+            for cid in chat_id:
+                try:
+                    last_msg = await original_send_message(self, cid, text, *args, **kwargs)
+                except Exception as e:
+                    LOGGER.error(f"Failed to send message to {cid}: {e}")
+            return last_msg
+        return await original_send_message(self, chat_id, text, *args, **kwargs)
+
+    Client.send_message = patched_send_message
+    
     async def main():
         await bot.start()
         bot_info = await bot.get_me()
