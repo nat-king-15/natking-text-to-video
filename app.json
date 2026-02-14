@@ -7,12 +7,6 @@
         "docker"
     ],
     "stack": "container",
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "eco"
-        }
-    },
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot's token",
@@ -35,9 +29,9 @@
             "required": true
         },
         "ADMIN_ID": {
-             "description": "Admin User ID (space separated if multiple)",
-             "value": "",
-             "required": false
+            "description": "Admin User ID (space separated if multiple)",
+            "value": "",
+            "required": false
         },
         "DB_URL": {
             "description": "MongoDB Connection String",
