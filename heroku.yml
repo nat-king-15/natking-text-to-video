@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 build:
   docker:
     worker: Dockerfile
 run:
+=======
+build:
+  docker:
+    worker: Dockerfile
+run:
+>>>>>>> 595a6caeb08f901ec90a4bfed6e34f32cb15f88e
   worker: python3 main.py

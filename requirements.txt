@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 xmltodict
 requests
 pycryptodome
@@ -15,4 +16,11 @@ m3u8
 psutil
 httpx
 Pillow
+=======
+pyrogram
+tgcrypto
+aiohttp
+requests
+pytz
+>>>>>>> 595a6caeb08f901ec90a4bfed6e34f32cb15f88e
 python-dotenv
