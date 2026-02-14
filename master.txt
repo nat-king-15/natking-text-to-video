@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 xmltodict 
 requests 
 pycryptodome
@@ -15,22 +14,4 @@ PyJWT
 m3u8
 psutil
 httpx
-=======
-xmltodict 
-requests 
-pycryptodome
-aiofiles
-aiohttp
-TgCrypto==1.2.5
-pyrofork==2.3.61
-cloudscraper
-bs4
-pytz
-motor
-yt-dlp==2024.10.22
-PyJWT
-m3u8
-psutil
-httpx
->>>>>>> 595a6caeb08f901ec90a4bfed6e34f32cb15f88e
 Pillow
